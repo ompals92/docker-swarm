@@ -6,12 +6,6 @@ terraform {
   }
 }
 
-provider "oci" {
-  region              = "us-sanjose-1"
-  auth                = "SecurityToken"
-  config_file_profile = "learn-terraform"
-}
-
 resource "oci_core_vcn" "internal" {
   dns_label      = "internal"
   cidr_block     = "172.16.0.0/20"
