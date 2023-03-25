@@ -1,0 +1,8 @@
+---
+- hosts: 40.121.52.177
+  collections:
+    - cisco.net
+  tasks:
+    - name: ping checking
+      shell: ping -c 5 40.121.52.177
+
